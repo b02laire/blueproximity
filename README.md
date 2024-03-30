@@ -48,13 +48,15 @@ If you know how to do it, please reach out and I'll include such packages!
 ## Development setup
 
 Create a virtual environment for Python 3.8 and install the 
-required libraries using the requirements.txt file.
+required libraries using the requirements.txt file. 
+You might need to install pybluez from source.
 
 ```sh
 cd my-blueproximity-project/
 virtualenv --python=python3.8 venvs/venv3.8
 source venvs/venv3.8/bin/activate
 pip3 install -r requirements.txt
+pip install  git+https://github.com/pybluez/pybluez.git
 ```
 
 ## Configuration
